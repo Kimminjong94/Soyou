@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5898B7D3281AB6D9004ABD54 /* EmotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */; };
+		5898B7D5281AB704004ABD54 /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898B7D4281AB704004ABD54 /* QuotesVC.swift */; };
 		58D013352817E6C700191ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D013342817E6C700191ECE /* AppDelegate.swift */; };
 		58D013372817E6C700191ECE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D013362817E6C700191ECE /* SceneDelegate.swift */; };
 		58D013392817E6C700191ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D013382817E6C700191ECE /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionVC.swift; sourceTree = "<group>"; };
+		5898B7D4281AB704004ABD54 /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
 		58D013312817E6C700191ECE /* Soyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D013342817E6C700191ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D013362817E6C700191ECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,13 +60,15 @@
 		58D013332817E6C700191ECE /* Soyou */ = {
 			isa = PBXGroup;
 			children = (
-				58D013342817E6C700191ECE /* AppDelegate.swift */,
-				58D013362817E6C700191ECE /* SceneDelegate.swift */,
-				58D013382817E6C700191ECE /* ViewController.swift */,
 				58D0133A2817E6C700191ECE /* Main.storyboard */,
+				58D013382817E6C700191ECE /* ViewController.swift */,
+				5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */,
+				5898B7D4281AB704004ABD54 /* QuotesVC.swift */,
 				58D0133D2817E6C800191ECE /* Assets.xcassets */,
 				58D0133F2817E6C800191ECE /* LaunchScreen.storyboard */,
 				58D013422817E6C800191ECE /* Info.plist */,
+				58D013362817E6C700191ECE /* SceneDelegate.swift */,
+				58D013342817E6C700191ECE /* AppDelegate.swift */,
 			);
 			path = Soyou;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5898B7D5281AB704004ABD54 /* QuotesVC.swift in Sources */,
 				58D013392817E6C700191ECE /* ViewController.swift in Sources */,
 				58D013352817E6C700191ECE /* AppDelegate.swift in Sources */,
+				5898B7D3281AB6D9004ABD54 /* EmotionVC.swift in Sources */,
 				58D013372817E6C700191ECE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
