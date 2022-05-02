@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class WeatherVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var searchTF: UITextField!
     override func viewDidLoad() {
