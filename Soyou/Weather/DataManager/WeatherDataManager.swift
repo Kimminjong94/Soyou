@@ -46,7 +46,13 @@ class WeatherDataManager: WeatherDataManagerDelegate {
         .responseDecodable(of: WeatherDataResponse.self) { response in
             switch response.result {
             case .success(let response):
-                delegate.didSuccessGetWeatherData(response.weather[0].id)
+                let id = response.weather[0].id
+                let temp = response.main.temp
+                let name = response.name
+                
+                let weather = WeatherModel(conditionId: id, cityName: name, temperature: temp)
+                
+                delegate.didSuccessGetWeatherData(weather)
             case .failure:
                 delegate.failedToGetWeatherData(message: "실패")
                 print(response)

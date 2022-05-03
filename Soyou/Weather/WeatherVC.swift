@@ -21,13 +21,16 @@ class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDelegate {
 
     let locationManager = CLLocationManager()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.delegate = self
 
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.requestLocation()
         
         searchTF.delegate = self
         
@@ -62,6 +65,8 @@ class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDelegate {
     }
     
     @IBAction func myLocationButtonPressed(_ sender: UIButton) {
+//        weatherManager.getMyplaceWeatherData(latitude: lat, longitude: lon, delegate: self)
+        locationManager.requestLocation()
     }
     
 }
@@ -88,8 +93,10 @@ extension WeatherVC {
 extension WeatherVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
+            locationManager.stopUpdatingLocation()	
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
+            
             weatherManager.getMyplaceWeatherData(latitude: lat, longitude: lon, delegate: self)
         }
         

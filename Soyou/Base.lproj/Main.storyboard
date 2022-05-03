@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O1C-Sr-X62">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8SU-Xl-WBx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -71,6 +71,12 @@
                                                     <action selector="myLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFx-gr-Qm6"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRs-Du-D6l">
+                                                <rect key="frame" x="174" y="607" width="67" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -117,7 +123,6 @@
                         <outlet property="searchTF" destination="91H-i2-S1g" id="gJa-cK-04S"/>
                         <outlet property="temperatureLabel" destination="Qza-J2-mCe" id="JkX-LE-qHV"/>
                         <outlet property="weatherImage" destination="AUI-6p-8xL" id="bYj-ZG-fUH"/>
-                        <segue destination="JVW-NO-Xn1" kind="show" id="bgS-uE-TBC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -135,9 +140,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="st2-zK-gwA"/>
-                    <connections>
-                        <segue destination="8SU-Xl-WBx" kind="show" id="GVc-l2-Hu0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JbX-wv-3ST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,14 +152,33 @@
                     <view key="view" contentMode="scaleToFill" id="hdb-Ve-Oeh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘도 화이팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wP-Jq-g2o">
+                                <rect key="frame" x="115.5" y="420.5" width="183" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="DwT-Ve-9Yr"/>
+                                    <constraint firstAttribute="width" constant="183" id="ybP-zE-FJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fRz-LQ-cEF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2wP-Jq-g2o" firstAttribute="centerY" secondItem="fRz-LQ-cEF" secondAttribute="centerY" id="Exs-bi-SWj"/>
+                            <constraint firstItem="2wP-Jq-g2o" firstAttribute="centerX" secondItem="fRz-LQ-cEF" secondAttribute="centerX" id="qOc-7y-czs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Kr-6C-yqJ"/>
+                    <connections>
+                        <outlet property="quotesLabel" destination="2wP-Jq-g2o" id="1uP-So-XDB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcz-ve-Qvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429" y="90"/>
+            <point key="canvasLocation" x="2428.985507246377" y="89.732142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Osn-gg-ZUE">
