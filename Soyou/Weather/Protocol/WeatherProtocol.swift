@@ -6,13 +6,15 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol WeatherDelegate {
-    func didSuccessGetWeatherData(_ result: String)
+    func didSuccessGetWeatherData(_ result: WeatherModel)
     func failedToGetWeatherData(message: String)
 }
 
 
 protocol WeatherDataManagerDelegate {
-    func getWeatherData(delegate: WeatherDelegate)
+    func getWeatherData(cityName: String, delegate: WeatherDelegate)
+    func getMyplaceWeatherData(latitude: CLLocationDegrees, longitude: CLLocationDegrees, delegate: WeatherDelegate)
 }

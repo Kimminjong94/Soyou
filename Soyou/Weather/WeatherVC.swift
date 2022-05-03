@@ -6,12 +6,28 @@
 //
 
 import UIKit
+import CoreLocation
 
-class WeatherVC: UIViewController, UITextFieldDelegate {
+class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDelegate {
 
+    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var cityName: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var searchTF: UITextField!
+    
+    @IBOutlet weak var myLocation: UIButton!
+    
+    var weatherManager: WeatherDataManagerDelegate = WeatherDataManager()
+
+    let locationManager = CLLocationManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = self
+
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
         
         searchTF.delegate = self
         
@@ -38,9 +54,48 @@ class WeatherVC: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        if let city = searchTF.text {
+            weatherManager.getWeatherData(cityName: city, delegate: self)
+        }
+        
         searchTF.text = ""
     }
     
+    @IBAction func myLocationButtonPressed(_ sender: UIButton) {
+    }
     
 }
 
+extension WeatherVC {
+    func didSuccessGetWeatherData(_ result: WeatherModel) {
+        self.cityName.text = result.cityName
+        self.temperatureLabel.text = result.temperatureString
+        
+        DispatchQueue.main.async {
+            self.weatherImage.image = UIImage(systemName: result.conditionName)
+
+        }
+    }
+    
+    func failedToGetWeatherData(message: String) {
+        print(message)
+    }
+}
+
+//MARK: - 로케이션 확인
+
+
+extension WeatherVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            let lat = location.coordinate.latitude
+            let lon = location.coordinate.longitude
+            weatherManager.getMyplaceWeatherData(latitude: lat, longitude: lon, delegate: self)
+        }
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+}

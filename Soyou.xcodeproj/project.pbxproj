@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30917A93729CB53957439015 /* Pods_Soyou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BB7623A3B89143330752C8 /* Pods_Soyou.framework */; };
+		58890C3B2821698B00074086 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890C3A2821698B00074086 /* WeatherModel.swift */; };
 		5898B7D3281AB6D9004ABD54 /* EmotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */; };
 		5898B7D5281AB704004ABD54 /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898B7D4281AB704004ABD54 /* QuotesVC.swift */; };
 		58C4CE9E282024840068DDE1 /* WeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C4CE9D282024840068DDE1 /* WeatherDataManager.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		03BB7623A3B89143330752C8 /* Pods_Soyou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A464DE9F2A78C71D5E74970 /* Pods-Soyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyou.release.xcconfig"; path = "Target Support Files/Pods-Soyou/Pods-Soyou.release.xcconfig"; sourceTree = "<group>"; };
+		58890C3A2821698B00074086 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionVC.swift; sourceTree = "<group>"; };
 		5898B7D4281AB704004ABD54 /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
 		58C4CE9D282024840068DDE1 /* WeatherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManager.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				58C4CEA1282024C40068DDE1 /* WeatherProtocol.swift */,
+				58890C3A2821698B00074086 /* WeatherModel.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				5898B7D5281AB704004ABD54 /* QuotesVC.swift in Sources */,
 				58D013392817E6C700191ECE /* WeatherVC.swift in Sources */,
 				58D013352817E6C700191ECE /* AppDelegate.swift in Sources */,
+				58890C3B2821698B00074086 /* WeatherModel.swift in Sources */,
 				58C4CEA2282024C40068DDE1 /* WeatherProtocol.swift in Sources */,
 				5898B7D3281AB6D9004ABD54 /* EmotionVC.swift in Sources */,
 				58C4CEA4282026230068DDE1 /* WeatherDataRequest.swift in Sources */,

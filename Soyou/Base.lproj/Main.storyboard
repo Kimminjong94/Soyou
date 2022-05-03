@@ -44,6 +44,33 @@
                                                     <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k1V-8X-deo"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seoul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mE-E2-gVl">
+                                                <rect key="frame" x="87" y="481" width="144" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="7Ad-xx-mTI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20.0 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qza-J2-mCe">
+                                                <rect key="frame" x="258" y="495" width="50" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsz-d4-hFc">
+                                                <rect key="frame" x="73" y="420" width="45" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Vzg-WJ-7MT"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="location.north.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="myLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFx-gr-Qm6"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -51,10 +78,15 @@
                                             <constraint firstItem="AUI-6p-8xL" firstAttribute="centerX" secondItem="HgN-bD-fLb" secondAttribute="centerX" id="7Ks-CP-Ocl"/>
                                             <constraint firstItem="AUI-6p-8xL" firstAttribute="top" secondItem="HgN-bD-fLb" secondAttribute="top" constant="56.5" id="BSP-My-Nvb"/>
                                             <constraint firstItem="91H-i2-S1g" firstAttribute="top" secondItem="AUI-6p-8xL" secondAttribute="bottom" constant="96.5" id="CsS-9y-U3l"/>
+                                            <constraint firstItem="xsz-d4-hFc" firstAttribute="top" secondItem="91H-i2-S1g" secondAttribute="bottom" constant="33" id="HCX-Ae-qvG"/>
                                             <constraint firstItem="91H-i2-S1g" firstAttribute="leading" secondItem="HgN-bD-fLb" secondAttribute="leading" constant="30" id="HVo-65-gAN"/>
                                             <constraint firstAttribute="trailing" secondItem="91H-i2-S1g" secondAttribute="trailing" constant="30" id="Iok-dP-oSP"/>
+                                            <constraint firstAttribute="trailing" secondItem="1mE-E2-gVl" secondAttribute="trailing" constant="183" id="Pz0-j4-7H7"/>
+                                            <constraint firstItem="1mE-E2-gVl" firstAttribute="leading" secondItem="HgN-bD-fLb" secondAttribute="leading" constant="87" id="VEm-ps-CJk"/>
                                             <constraint firstItem="jlx-fP-lh6" firstAttribute="top" secondItem="91H-i2-S1g" secondAttribute="bottom" constant="8" symbolic="YES" id="Ya4-hI-Qg6"/>
+                                            <constraint firstItem="1mE-E2-gVl" firstAttribute="top" secondItem="91H-i2-S1g" secondAttribute="bottom" constant="94" id="frB-Qk-pbF"/>
                                             <constraint firstAttribute="trailing" secondItem="jlx-fP-lh6" secondAttribute="trailing" constant="30" id="ivv-9r-C2r"/>
+                                            <constraint firstItem="xsz-d4-hFc" firstAttribute="leading" secondItem="HgN-bD-fLb" secondAttribute="leading" constant="73" id="ncf-CW-itR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -80,7 +112,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="kXV-au-wwq"/>
                     <connections>
+                        <outlet property="cityName" destination="1mE-E2-gVl" id="38W-sn-yYC"/>
+                        <outlet property="myLocation" destination="xsz-d4-hFc" id="wme-Fq-9kv"/>
                         <outlet property="searchTF" destination="91H-i2-S1g" id="gJa-cK-04S"/>
+                        <outlet property="temperatureLabel" destination="Qza-J2-mCe" id="JkX-LE-qHV"/>
+                        <outlet property="weatherImage" destination="AUI-6p-8xL" id="bYj-ZG-fUH"/>
                         <segue destination="JVW-NO-Xn1" kind="show" id="bgS-uE-TBC"/>
                     </connections>
                 </viewController>
@@ -144,6 +180,7 @@
     </scenes>
     <resources>
         <image name="cloud" catalog="system" width="128" height="88"/>
+        <image name="location.north.circle" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

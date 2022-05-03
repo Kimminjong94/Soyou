@@ -7,6 +7,17 @@
 
 import Foundation
 
-struct WeatherDataResponse: Decodable {
-    let isSuccess: Bool
+struct WeatherDataResponse: Codable {
+    let name: String
+    let weather: [WeatherDataString]
+    let main: WeatherData
+
+}
+struct WeatherDataString: Codable {
+    let description: String
+    let id: Int
+}
+
+struct WeatherData: Codable {
+    let temp: Double
 }
