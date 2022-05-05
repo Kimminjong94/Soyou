@@ -8,11 +8,17 @@
 import Foundation
 
 struct QuotesResponse: Decodable {
-    let result: [Result]
+    let status: Int
+    let message: String
+    let count: Int
+    let quotes: [Quotes]
     
 }
-struct Result: Decodable {
+
+struct Quotes: Decodable {
     let text: String
-    let authoer: String
+    let author: String
+    let tag: String
+    
 }
 

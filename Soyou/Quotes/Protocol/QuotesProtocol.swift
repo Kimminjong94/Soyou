@@ -9,10 +9,17 @@ import Foundation
 
 
 protocol QuotesDelegate {
-    func didSuccessGetQuotes(_ result: String)
+    func didSuccessGetQuotes(_ result: [Quotes])
     func failedToGetQuotes(message: String)
 }
 
+protocol PhotoDelegate {
+    func didSuccessGetPhoto(_ result: URLS)
+    func failedToGetPhoto(message: String)
+}
+
+
 protocol QuotesDataManagerDelegate {
     func getQuotesData(delegate: QuotesDelegate)
+    func getQuotesTagPhoto(tagName: String, delegate: PhotoDelegate)
 }
