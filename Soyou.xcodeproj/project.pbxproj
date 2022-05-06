@@ -24,6 +24,7 @@
 		58D0133C2817E6C700191ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D0133A2817E6C700191ECE /* Main.storyboard */; };
 		58D0133E2817E6C800191ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D0133D2817E6C800191ECE /* Assets.xcassets */; };
 		58D013412817E6C800191ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D0133F2817E6C800191ECE /* LaunchScreen.storyboard */; };
+		58F8DDA0282515EB00E3F792 /* SocialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F8DD9F282515EB00E3F792 /* SocialLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		58D0133D2817E6C800191ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D013402817E6C800191ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D013422817E6C800191ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F8DD9F282515EB00E3F792 /* SocialLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginVC.swift; sourceTree = "<group>"; };
 		BF5D71D5A57FA8F597311668 /* Pods-Soyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyou.debug.xcconfig"; path = "Target Support Files/Pods-Soyou/Pods-Soyou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				58D0133A2817E6C700191ECE /* Main.storyboard */,
+				58F8DDA1282515EE00E3F792 /* SocialLogin */,
 				58C4CE9F2820248A0068DDE1 /* Weather */,
 				58C4CEA9282026530068DDE1 /* Emotion */,
 				58C4CEAA282026590068DDE1 /* Quotes */,
@@ -183,6 +186,14 @@
 				58D013342817E6C700191ECE /* AppDelegate.swift */,
 			);
 			path = Soyou;
+			sourceTree = "<group>";
+		};
+		58F8DDA1282515EE00E3F792 /* SocialLogin */ = {
+			isa = PBXGroup;
+			children = (
+				58F8DD9F282515EB00E3F792 /* SocialLoginVC.swift */,
+			);
+			path = SocialLogin;
 			sourceTree = "<group>";
 		};
 		C99E51B81F6E47A91D3B7CC0 /* Frameworks */ = {
@@ -313,6 +324,7 @@
 				58890C3D2821792D00074086 /* QuotesDataManager.swift in Sources */,
 				58B7BBF22822A4030095DF4B /* PhotoResponse.swift in Sources */,
 				58D013392817E6C700191ECE /* WeatherVC.swift in Sources */,
+				58F8DDA0282515EB00E3F792 /* SocialLoginVC.swift in Sources */,
 				58D013352817E6C700191ECE /* AppDelegate.swift in Sources */,
 				58890C3B2821698B00074086 /* WeatherModel.swift in Sources */,
 				58C4CEA2282024C40068DDE1 /* WeatherProtocol.swift in Sources */,
@@ -471,6 +483,7 @@
 				DEVELOPMENT_TEAM = B84Q5QFST2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Soyou/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치를 알 수 있을까요?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -500,6 +513,7 @@
 				DEVELOPMENT_TEAM = B84Q5QFST2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Soyou/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치를 알 수 있을까요?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
