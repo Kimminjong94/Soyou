@@ -74,7 +74,7 @@ class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDelegate {
 extension WeatherVC {
     func didSuccessGetWeatherData(_ result: WeatherModel) {
         self.cityName.text = result.cityName
-        self.temperatureLabel.text = result.temperatureString
+        self.temperatureLabel.text = result.temperatureString + " °C"
         
         DispatchQueue.main.async {
             self.weatherImage.image = UIImage(systemName: result.conditionName)

@@ -24,6 +24,7 @@
 		58D0133C2817E6C700191ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D0133A2817E6C700191ECE /* Main.storyboard */; };
 		58D0133E2817E6C800191ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D0133D2817E6C800191ECE /* Assets.xcassets */; };
 		58D013412817E6C800191ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D0133F2817E6C800191ECE /* LaunchScreen.storyboard */; };
+		58E11541282520AB00A79F20 /* BaseNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E11540282520AB00A79F20 /* BaseNavigationVC.swift */; };
 		58F8DDA0282515EB00E3F792 /* SocialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F8DD9F282515EB00E3F792 /* SocialLoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		58D0133D2817E6C800191ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D013402817E6C800191ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D013422817E6C800191ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E11540282520AB00A79F20 /* BaseNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationVC.swift; sourceTree = "<group>"; };
 		58F8DD9F282515EB00E3F792 /* SocialLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginVC.swift; sourceTree = "<group>"; };
 		BF5D71D5A57FA8F597311668 /* Pods-Soyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyou.debug.xcconfig"; path = "Target Support Files/Pods-Soyou/Pods-Soyou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +186,7 @@
 				58D013422817E6C800191ECE /* Info.plist */,
 				58D013362817E6C700191ECE /* SceneDelegate.swift */,
 				58D013342817E6C700191ECE /* AppDelegate.swift */,
+				58E11540282520AB00A79F20 /* BaseNavigationVC.swift */,
 			);
 			path = Soyou;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				58890C3B2821698B00074086 /* WeatherModel.swift in Sources */,
 				58C4CEA2282024C40068DDE1 /* WeatherProtocol.swift in Sources */,
 				58890C3F2821796700074086 /* QuotesProtocol.swift in Sources */,
+				58E11541282520AB00A79F20 /* BaseNavigationVC.swift in Sources */,
 				5898B7D3281AB6D9004ABD54 /* EmotionVC.swift in Sources */,
 				58D013372817E6C700191ECE /* SceneDelegate.swift in Sources */,
 				58C4CEA62820262F0068DDE1 /* WeatherDataResponse.swift in Sources */,
