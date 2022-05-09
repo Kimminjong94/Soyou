@@ -33,9 +33,7 @@ class SocialLoginVC: UIViewController {
                             // 전환된 화면이 보여지는 방법 설정 (fullScreen)
                             secondViewController.modalPresentationStyle = .fullScreen
                             self.present(secondViewController, animated: true, completion: nil)
-                    
-                    
-                    
+
                     _ = oauthToken
                     /// 로그인 관련 메소드 추가
                 }

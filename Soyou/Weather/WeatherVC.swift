@@ -16,6 +16,7 @@ class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDelegate {
     @IBOutlet weak var searchTF: UITextField!
     
     @IBOutlet weak var myLocation: UIButton!
+    @IBOutlet weak var emotionLabel: UIButton!
     
     var weatherManager: WeatherDataManagerDelegate = WeatherDataManager()
 
@@ -30,6 +31,8 @@ class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emotionLabel.layer.cornerRadius = 15
 
         
         searchTF.delegate = self

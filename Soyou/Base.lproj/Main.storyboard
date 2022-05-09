@@ -71,9 +71,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRs-Du-D6l">
-                                                <rect key="frame" x="134" y="365" width="146" height="42"/>
-                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <rect key="frame" x="119.5" y="365" width="175" height="48"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="How are you?">
@@ -128,6 +128,7 @@
                     <navigationItem key="navigationItem" id="kXV-au-wwq"/>
                     <connections>
                         <outlet property="cityName" destination="1mE-E2-gVl" id="38W-sn-yYC"/>
+                        <outlet property="emotionLabel" destination="iRs-Du-D6l" id="RyA-Qj-ToW"/>
                         <outlet property="myLocation" destination="xsz-d4-hFc" id="wme-Fq-9kv"/>
                         <outlet property="searchTF" destination="91H-i2-S1g" id="gJa-cK-04S"/>
                         <outlet property="temperatureLabel" destination="Qza-J2-mCe" id="JkX-LE-qHV"/>
@@ -146,40 +147,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4Vt-vw-nzh">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Vt-vw-nzh">
                                 <rect key="frame" x="20" y="291" width="374" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZD-PB-4O8">
-                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="BAD">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="8SU-Xl-WBx" kind="show" id="lvv-Kw-A5c"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ein-7U-ttL">
-                                        <rect key="frame" x="124.5" y="0.0" width="125" height="48"/>
+                                        <rect key="frame" x="126.5" y="0.0" width="121" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="FINE">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="8SU-Xl-WBx" kind="show" id="o7S-5v-lSK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1G-43-Sgj">
-                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="48"/>
+                                        <rect key="frame" x="252.5" y="0.0" width="121.5" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="GREAT">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="8SU-Xl-WBx" kind="show" id="W2p-5E-hiz"/>
@@ -197,6 +201,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="st2-zK-gwA"/>
+                    <connections>
+                        <outlet property="badLabel" destination="JZD-PB-4O8" id="QWy-B6-GAl"/>
+                        <outlet property="fineLabel" destination="Ein-7U-ttL" id="xnG-DI-7za"/>
+                        <outlet property="greatLabel" destination="b1G-43-Sgj" id="35K-yY-Pfi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JbX-wv-3ST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,6 +341,18 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
