@@ -12,10 +12,10 @@ import KakaoSDKUser
 
 class SocialLoginVC: UIViewController {
 
+    @IBOutlet weak var viewLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.viewLabel.layer.cornerRadius = 15
         
     }
     

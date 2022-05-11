@@ -303,28 +303,25 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Are You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5X-Bi-PCD">
                                 <rect key="frame" x="47" y="194" width="320" height="60"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bfo-qX-coz">
-                                <rect key="frame" x="0.0" y="62" width="414" height="800"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="syZ-3b-ymC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cHM-aV-3rU" firstAttribute="leading" secondItem="syZ-3b-ymC" secondAttribute="leading" constant="20" id="89T-F6-65I"/>
-                            <constraint firstItem="Bfo-qX-coz" firstAttribute="leading" secondItem="syZ-3b-ymC" secondAttribute="leading" id="8b5-pb-iN7"/>
-                            <constraint firstItem="Bfo-qX-coz" firstAttribute="top" secondItem="syZ-3b-ymC" secondAttribute="top" constant="18" id="JBi-E3-Jh1"/>
                             <constraint firstItem="X5X-Bi-PCD" firstAttribute="centerX" secondItem="syZ-3b-ymC" secondAttribute="centerX" id="Ni4-cB-cAp"/>
-                            <constraint firstItem="syZ-3b-ymC" firstAttribute="bottom" secondItem="Bfo-qX-coz" secondAttribute="bottom" id="T6O-qI-QqO"/>
                             <constraint firstItem="X5X-Bi-PCD" firstAttribute="top" secondItem="syZ-3b-ymC" secondAttribute="top" constant="150" id="VM2-DB-vMm"/>
                             <constraint firstItem="cHM-aV-3rU" firstAttribute="top" secondItem="syZ-3b-ymC" secondAttribute="top" constant="332" id="WHa-pq-18u"/>
                             <constraint firstItem="syZ-3b-ymC" firstAttribute="trailing" secondItem="cHM-aV-3rU" secondAttribute="trailing" constant="20" id="kr5-Jk-bXs"/>
-                            <constraint firstItem="syZ-3b-ymC" firstAttribute="trailing" secondItem="Bfo-qX-coz" secondAttribute="trailing" id="vjS-Va-Qx6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="viewLabel" destination="X5X-Bi-PCD" id="rvu-NW-Shd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87P-Yl-8AJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
