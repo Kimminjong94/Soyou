@@ -4,7 +4,7 @@
 
 개발 내역
 - 카카오로그인 연동
-![IMG_8234](https://user-images.githubusercontent.com/79985912/168099353-9507ef00-d012-45c3-a3fb-f11843024dee.PNG) width="300" height="300"
+![IMG_8234](https://user-images.githubusercontent.com/79985912/168099353-9507ef00-d012-45c3-a3fb-f11843024dee.PNG width="300" height="300") 
 
 
 
