@@ -1,5 +1,6 @@
 # Soyou
-Toy project initial commit
+
+날씨와 기분을 알려주어 오늘 하루의 명언을 볼 수 있는 어플입니다.
 
 개발 내역
 
