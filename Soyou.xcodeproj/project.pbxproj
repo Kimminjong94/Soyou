@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30917A93729CB53957439015 /* Pods_Soyou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BB7623A3B89143330752C8 /* Pods_Soyou.framework */; };
+		5841EA58282D4D9000E63EAA /* EmotionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5841EA57282D4D9000E63EAA /* EmotionDataManager.swift */; };
 		58890C3B2821698B00074086 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890C3A2821698B00074086 /* WeatherModel.swift */; };
 		58890C3D2821792D00074086 /* QuotesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890C3C2821792D00074086 /* QuotesDataManager.swift */; };
 		58890C3F2821796700074086 /* QuotesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890C3E2821796700074086 /* QuotesProtocol.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		03BB7623A3B89143330752C8 /* Pods_Soyou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A464DE9F2A78C71D5E74970 /* Pods-Soyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyou.release.xcconfig"; path = "Target Support Files/Pods-Soyou/Pods-Soyou.release.xcconfig"; sourceTree = "<group>"; };
+		5841EA57282D4D9000E63EAA /* EmotionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDataManager.swift; sourceTree = "<group>"; };
 		58890C3A2821698B00074086 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		58890C3C2821792D00074086 /* QuotesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDataManager.swift; sourceTree = "<group>"; };
 		58890C3E2821796700074086 /* QuotesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesProtocol.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */,
+				5841EA57282D4D9000E63EAA /* EmotionDataManager.swift */,
 			);
 			path = Emotion;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				58C4CE9E282024840068DDE1 /* WeatherDataManager.swift in Sources */,
 				5898B7D5281AB704004ABD54 /* QuotesVC.swift in Sources */,
 				58890C3D2821792D00074086 /* QuotesDataManager.swift in Sources */,
+				5841EA58282D4D9000E63EAA /* EmotionDataManager.swift in Sources */,
 				58B7BBF22822A4030095DF4B /* PhotoResponse.swift in Sources */,
 				58D013392817E6C700191ECE /* WeatherVC.swift in Sources */,
 				58F8DDA0282515EB00E3F792 /* SocialLoginVC.swift in Sources */,
