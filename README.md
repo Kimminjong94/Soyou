@@ -12,7 +12,7 @@
 
 - 현재위치 좌표 검색 후 날씨 API연동
 
-<img src="https://user-images.githubusercontent.com/79985912/168099353-9507ef00-d012-45c3-a3fb-f11843024dee.PNG" width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/79985912/168099962-fa57bb73-d3cd-450c-94c2-25bc66c7d3c0.PNG" width="200" height="400"/>
 
 - 명언 API연동
 
