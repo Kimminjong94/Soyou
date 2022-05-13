@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct EmotionResponse: Decodable {
     let total: Int
     let results: [EmotionPhotoUrl]
