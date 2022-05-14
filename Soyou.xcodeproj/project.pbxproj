@@ -13,6 +13,7 @@
 		58890C3D2821792D00074086 /* QuotesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890C3C2821792D00074086 /* QuotesDataManager.swift */; };
 		58890C3F2821796700074086 /* QuotesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890C3E2821796700074086 /* QuotesProtocol.swift */; };
 		58890C4128217AE600074086 /* QuotesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890C4028217AE600074086 /* QuotesResponse.swift */; };
+		58942F57282FCD0300F1F2A7 /* EmotionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58942F56282FCD0300F1F2A7 /* EmotionProtocol.swift */; };
 		5894D631282E181E00B7749E /* EmotionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894D630282E181E00B7749E /* EmotionResponse.swift */; };
 		5898B7D3281AB6D9004ABD54 /* EmotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */; };
 		5898B7D5281AB704004ABD54 /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898B7D4281AB704004ABD54 /* QuotesVC.swift */; };
@@ -38,6 +39,7 @@
 		58890C3C2821792D00074086 /* QuotesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDataManager.swift; sourceTree = "<group>"; };
 		58890C3E2821796700074086 /* QuotesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesProtocol.swift; sourceTree = "<group>"; };
 		58890C4028217AE600074086 /* QuotesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResponse.swift; sourceTree = "<group>"; };
+		58942F56282FCD0300F1F2A7 /* EmotionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionProtocol.swift; sourceTree = "<group>"; };
 		5894D630282E181E00B7749E /* EmotionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionResponse.swift; sourceTree = "<group>"; };
 		5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionVC.swift; sourceTree = "<group>"; };
 		5898B7D4281AB704004ABD54 /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,30 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		58942F58282FCD0700F1F2A7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				58942F56282FCD0300F1F2A7 /* EmotionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		58942F59282FCD0F00F1F2A7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5894D630282E181E00B7749E /* EmotionResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		58942F5A282FCD2000F1F2A7 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5841EA57282D4D9000E63EAA /* EmotionDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		58C4CE9F2820248A0068DDE1 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,9 +169,10 @@
 		58C4CEA9282026530068DDE1 /* Emotion */ = {
 			isa = PBXGroup;
 			children = (
+				58942F58282FCD0700F1F2A7 /* Protocol */,
+				58942F59282FCD0F00F1F2A7 /* Entity */,
+				58942F5A282FCD2000F1F2A7 /* DataManager */,
 				5898B7D2281AB6D9004ABD54 /* EmotionVC.swift */,
-				5841EA57282D4D9000E63EAA /* EmotionDataManager.swift */,
-				5894D630282E181E00B7749E /* EmotionResponse.swift */,
 			);
 			path = Emotion;
 			sourceTree = "<group>";
@@ -345,6 +372,7 @@
 				58D013372817E6C700191ECE /* SceneDelegate.swift in Sources */,
 				58C4CEA62820262F0068DDE1 /* WeatherDataResponse.swift in Sources */,
 				58890C4128217AE600074086 /* QuotesResponse.swift in Sources */,
+				58942F57282FCD0300F1F2A7 /* EmotionProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
