@@ -9,17 +9,17 @@ import Foundation
 
 
 protocol EmotionProtocol {
-    func didSuccessGetQuotes(_ result: [Quotes])
-    func failedToGetQuotes(message: String)
+    func didSuccessGetEmotion(_ result: [Quotes])
+    func failedToGetEmotion(message: String)
 }
 
 protocol EmotionDelegate {
-    func didSuccessGetPhoto(_ result: URLS)
-    func failedToGetPhoto(message: String)
+    func didSuccessGetPhotoEmotion(_ result: URLS)
+    func failedToGetPhotoEmotion(message: String)
 }
 
 
-protocol QuotesDataManagerDelegate {
-    func getQuotesData(delegate: EmotionDelegate)
-    func getQuotesTagPhoto(tagName: String, delegate: EmotionDelegate)
+protocol EmotionDataManagerDelegate {
+    func getEmotionData(delegate: EmotionDelegate)
+    func getEmotionTagPhoto(tagName: String, delegate: EmotionDelegate)
 }
