@@ -10,8 +10,6 @@ import Alamofire
 
 class QuotesDataManager: QuotesDataManagerDelegate {
 
-    
-    
     func getQuotesData(delegate: QuotesDelegate){
         let group = DispatchGroup()
         group.enter()
