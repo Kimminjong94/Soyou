@@ -6,9 +6,18 @@
 //
 
 import Foundation
+import Alamofire
 
 
 class EmotionDataManager: EmotionDataManagerDelegate {
+    func getEmotionData(delegate: EmotionDelegate) {
+        
+    }
+    
+    func getEmotionTagPhoto(tagName: String, delegate: EmotionDelegate) {
+        
+    }
+    
     
     func getQuotesTagPhoto(tagName: String, delegate: PhotoDelegate) {
         
