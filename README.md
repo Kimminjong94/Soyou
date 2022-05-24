@@ -20,7 +20,8 @@ Gif이미지로 수정예정
 
 - 날씨에 맞는 사진API연동
 
-<img src="https://user-images.githubusercontent.com/79985912/168100079-f6d1d088-2d7c-4b41-a8cb-449af589aeb1.PNG" width="200" height="400"/>
+
+
 
 
 
