@@ -180,6 +180,7 @@
 		58C4CEAA282026590068DDE1 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				5898B7D4281AB704004ABD54 /* QuotesVC.swift */,
 				58890C4328217AF200074086 /* Protocol */,
 				58890C4228217AEC00074086 /* Entity */,
 				58890C4428217AFA00074086 /* DataManager */,
@@ -213,7 +214,6 @@
 				58C4CE9F2820248A0068DDE1 /* Weather */,
 				58C4CEA9282026530068DDE1 /* Emotion */,
 				58C4CEAA282026590068DDE1 /* Quotes */,
-				5898B7D4281AB704004ABD54 /* QuotesVC.swift */,
 				58D0133D2817E6C800191ECE /* Assets.xcassets */,
 				58D0133F2817E6C800191ECE /* LaunchScreen.storyboard */,
 				58D013422817E6C800191ECE /* Info.plist */,
